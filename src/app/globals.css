@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: #FBFBF9;
+  --color-surface: #F3EFEA;
+  --color-ink: #1B1D1A;
+  --color-ink-muted: #5C6059;
+  --color-accent: #3D4A3E;
+  --color-timber: #9E7B54;
+  --color-rule: #E5E2DA;
+  --color-white: #FFFFFF;
+
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-jakarta);
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  text-wrap: balance;
+}
+
+p, li, blockquote {
+  text-wrap: pretty;
+}
+
+/* ── Focus ──────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ── Dialog / Lightbox backdrop ─────────────────────────────── */
+
+dialog::backdrop {
+  background: rgba(27, 29, 26, 0.85);
+}
