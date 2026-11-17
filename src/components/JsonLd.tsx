@@ -22,7 +22,7 @@ export function JsonLd() {
     },
     telephone: "+61452185145",
     email: "bookings@riversidecabinandvanpark.au",
-    url: "https://riversidecabinandvanpark.au",
+    url: "https://riversidecabinandvanpark.com",
     amenityFeature: [
       {
         "@type": "LocationFeatureSpecification",

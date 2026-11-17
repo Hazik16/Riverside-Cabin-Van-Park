@@ -15,11 +15,14 @@ export const metadata: Metadata = {
   title: "Cabins & Powered Sites | Riverside Cabin and Van Park Muswellbrook",
   description:
     "Clean cabins and powered caravan sites on Mill Street, Muswellbrook NSW. Close to Hunter Valley mining and power operations.",
+  alternates: {
+    canonical: "/accommodation",
+  },
   openGraph: {
     title: "Cabins & Powered Sites | Riverside Cabin and Van Park",
     description:
       "Explore Ensuite Cabins, Basic Cabins, and Powered Caravan Sites in Muswellbrook NSW. Direct bookings and inquiries.",
-    url: "https://riversidecabinandvanpark.au/accommodation",
+    url: "https://riversidecabinandvanpark.com/accommodation",
     siteName: "Riverside Cabin and Van Park",
     locale: "en_AU",
     type: "website",

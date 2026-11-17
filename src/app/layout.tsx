@@ -61,7 +61,13 @@ export const metadata: Metadata = {
   title: "Riverside Cabin and Van Park | Muswellbrook Accommodation NSW",
   description:
     "Clean cabins and powered caravan sites on Mill Street, Muswellbrook NSW. Close to Hunter Valley mining and power operations.",
-  metadataBase: new URL("https://riversidecabinandvanpark.au"),
+  metadataBase: new URL("https://riversidecabinandvanpark.com"),
+  alternates: {
+    canonical: "/",
+  },
+  verification: {
+    google: "X0kK8Atngw076INZiTCG2tJsXGTuA1rhQSHH7nSg5_w",
+  },
   icons: {
     icon: "/favicon.ico",
   },
@@ -69,7 +75,7 @@ export const metadata: Metadata = {
     title: "Riverside Cabin and Van Park | Muswellbrook Accommodation NSW",
     description:
       "Clean cabins and powered caravan sites on Mill Street, Muswellbrook NSW. Serving contractors, workers, and travellers.",
-    url: "https://riversidecabinandvanpark.au",
+    url: "https://riversidecabinandvanpark.com",
     siteName: "Riverside Cabin and Van Park",
     locale: "en_AU",
     type: "website",
